@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -7,9 +8,10 @@ export default function Home() {
         <title>Si Thu Kyaw</title>
         <meta name="description" content="Si Thu Kyaw Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../../assets/favicon.png" />
       </Head>
 
+      <Navbar/>
     </>
   )
 }

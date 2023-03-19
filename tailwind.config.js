@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow:{
+        'inner-nav':'inset 0px 0px 5px -2px rgba(0, 173, 181);',
+        'nav':'0px 0px 5px -2px rgba(0, 173, 181);',
+      }
+    },
     colors:{
       'primary': '#00ADB5',
       'secondary': '#393E46',

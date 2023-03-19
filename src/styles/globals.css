@@ -8,6 +8,11 @@
     font-family: 'Poppins', sans-serif !important;
 
 }
+.active{
+    background-color: #00ADB5;
+    color: #393E46;
+}
+
 
 @layer base {
     body {
