@@ -5,7 +5,7 @@ import {FaFolderOpen, FaUserGraduate} from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <nav className={`w-[50px] hover:w-[150px] overflow-hidden grid grid-rows-5 gap-5 bg-secondary rounded-xl fixed top-[30%] right-[3%] duration-700 ease-in-out shadow-inner-nav`}>
+        <nav className={`w-[50px] hover:w-[150px] overflow-hidden grid grid-rows-5 gap-5 bg-secondary rounded-xl fixed top-[30%] right-[1%] duration-700 ease-in-out shadow-inner-nav`}>
             <ul className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
                 <IoHome className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                 <li className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Home</li>
