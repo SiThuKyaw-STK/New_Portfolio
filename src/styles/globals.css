@@ -7,10 +7,28 @@
 @layer base {
     * {
         font-family: 'Poppins', sans-serif !important;
-
+        scroll-behavior: smooth !important;
     }
     body {
         background-color: #1E1E1E;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-bold
+    }
+    h1{
+        @apply text-[35px] leading-[30px] lg:text-[60px] lg:leading-[70px] md:text-[50px] md:leading-[60px]
+    }
+    h2{
+        @apply text-[30px] leading-[40px] lg:text-[50px] lg:leading-[60px] md:text-[40px] md:leading-[50px]
+    }
+    h3{
+        @apply text-[40px] leading-[50px]
+    }
+    h6{
+        @apply text-[20px] leading-[35px]
+    }
+    p{
+        @apply lg:text-[25px] lg:leading-[35px] md:text-[25px] md:leading-[35px]
     }
     .scroll-down span{
         cursor: pointer;
@@ -51,21 +69,13 @@
 }
 @layer components {
     .btn-black {
-        font-size: 20px;
-        font-weight: 500;
-        background-color: #1E1E1E;
-        padding: 10px 15px;
-        border-radius: 5px;
+        @apply text-[17px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-black
     }
     .btn-black:hover{
         background-color: #323232;
     }
     .btn-primary{
-        font-size: 20px;
-        font-weight: 500;
-        background-color: #00ADB5;
-        padding: 10px 15px;
-        border-radius: 5px;
+        @apply text-[17px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-primary
     }
     .btn-primary:hover{
         background-color: #00dce4;
