@@ -19,7 +19,7 @@ const Skills = () => {
         <section id={`skills`} className={`py-[1rem] sm:px-[5rem] px-[2rem]`}>
             <h6 className={`text-primary font-[500] text-center`}>Here is</h6>
             <h3 className={`text-white font-bold text-center`}>
-                <span className={`underline underline-offset-[15px] decoration-primary`}>My</span>
+                <span className={`underline underline-offset-[15px] decoration-primary`}>My</span>&nbsp;
                 Skills
             </h3>
             <div className={`md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-y-15 flex flex-col my-[5rem] border-dotted border-2 border-primary p-10`}>

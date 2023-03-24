@@ -24,6 +24,9 @@
     h3{
         @apply text-[40px] leading-[50px]
     }
+    h4{
+        @apply text-[30px] leading-[35px] lg:text-[35px] lg:leading-[40px]
+    }
     h6{
         @apply text-[20px] leading-[35px]
     }

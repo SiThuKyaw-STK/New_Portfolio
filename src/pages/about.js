@@ -2,6 +2,7 @@ import React from 'react';
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import AboutOfHero from "../components/AboutOfHero";
+import Services from "../components/Services";
 
 function About(props) {
     return (
@@ -14,6 +15,7 @@ function About(props) {
             </Head>
             <Navbar/>
             <AboutOfHero/>
+            <Services/>
         </>
     );
 }

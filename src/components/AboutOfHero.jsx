@@ -3,6 +3,7 @@ import Image from "next/image";
 import aboutImg from "/public/assets/aboutofhero.png"
 import {BsFiletypePdf} from "react-icons/bs";
 import {MdOutlineKeyboardDoubleArrowDown} from "react-icons/md";
+import Link from "next/link";
 
 const AboutOfHero = () => {
     return (
@@ -37,12 +38,12 @@ const AboutOfHero = () => {
                                 className={`group-hover:btn-animation text-2xl h-full animation-500 lg:absolute left-3 top-0 lg:opacity-0`}/>
                             Download CV
                         </a>
-                        <a href="/#services"
+                        <Link href="/about/#services"
                            className={`group lg:hover:indent-8 indent-2 btn-primary text-black inline-flex items-center justify-center relative animation-500`}>
                             <MdOutlineKeyboardDoubleArrowDown
                                 className={`hidden md:block group-hover:btn-animation text-2xl h-full animation-500 lg:absolute left-3 top-0 lg:opacity-0`}/>
                             What I Can Do?
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
