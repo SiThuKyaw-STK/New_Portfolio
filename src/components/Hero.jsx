@@ -23,15 +23,15 @@ const Hero = () => {
                 </p>
                 <div className={`mt-5 flex items-center justify-center`}>
                     <a href="/"
-                       className={`group mr-2 md:hover:indent-8 indent-2 btn-black text-white inline-flex items-center justify-center relative animation-500`}>
+                       className={`group mr-2 lg:hover:indent-8 indent-2 btn-black text-white inline-flex items-center justify-center relative animation-500`}>
                         <BsFiletypePdf
-                            className={`group-hover:btn-animation text-2xl h-full animation-500 md:absolute left-3 top-0 md:opacity-0`}/>
+                            className={`group-hover:btn-animation text-2xl h-full animation-500 lg:absolute left-3 top-0 lg:opacity-0`}/>
                         Download CV
                     </a>
                     <a href="/"
-                       className={`group md:hover:indent-8 indent-2 btn-primary text-black inline-flex items-center justify-center relative animation-500`}>
+                       className={`group lg:hover:indent-8 indent-2 btn-primary text-black inline-flex items-center justify-center relative animation-500`}>
                         <GiRotaryPhone
-                            className={`group-hover:btn-animation text-2xl h-full animation-500 md:absolute left-3 top-0 md:opacity-0`}/>
+                            className={`group-hover:btn-animation text-2xl h-full animation-500 lg:absolute left-3 top-0 lg:opacity-0`}/>
                         Contact Me
                     </a>
                 </div>
