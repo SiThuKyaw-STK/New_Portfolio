@@ -20,7 +20,7 @@ const Navbar = () => {
                     <FaUserGraduate className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Education</span>
                 </Link>
-                <Link href={`/`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
+                <Link href={`/projects`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
                     <FaFolderOpen className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Projects</span>
                 </Link>

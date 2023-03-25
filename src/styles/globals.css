@@ -84,6 +84,9 @@
     .btn-primary:hover{
         background-color: #00dce4;
     }
+    .btn-ghost{
+        @apply text-white/50 border px-8 py-2 inline-block rounded-full
+    }
     .btn-animation{
         @apply opacity-100
     }
