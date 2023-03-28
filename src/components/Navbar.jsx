@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         <>
-            <nav className={`md:grid hidden w-[50px] hover:w-[150px] overflow-hidden grid grid-rows-5 gap-5 bg-secondary rounded-xl fixed top-[30%] right-[1%] duration-700 ease-in-out shadow-inner-nav`}>
+            <nav className={`z-[1000] md:grid hidden w-[50px] hover:w-[150px] overflow-hidden grid grid-rows-5 gap-5 bg-secondary rounded-xl fixed top-[30%] right-[1%] duration-700 ease-in-out shadow-inner-nav`}>
                 <Link href={`/`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
                     <IoHome className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Home</span>
@@ -16,7 +16,7 @@ const Navbar = () => {
                     <BsFillInfoCircleFill className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>About</span>
                 </Link>
-                <Link href={`/`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
+                <Link href={`/education`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
                     <FaUserGraduate className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Education</span>
                 </Link>
