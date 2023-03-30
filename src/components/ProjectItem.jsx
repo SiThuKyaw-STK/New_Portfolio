@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import projectImg1 from "../../public/assets/projects/img.png";
 import {BsArrowRight} from "react-icons/bs";
+import Link from "next/link";
 
 const ProjectItem = ({sOrD,title,img,bgColor,textColor,hoverColor,order}) => {
     return (
@@ -16,12 +17,12 @@ const ProjectItem = ({sOrD,title,img,bgColor,textColor,hoverColor,order}) => {
                     elit.
                     Accusamus asperiores, aspernatur
                     deserunt iste sequi totam.</p>
-                <a href="/"
+                <Link href="/"
                    className={`group ${hoverColor} hover:text-black btn-ghost inline-flex items-center justify-center relative animation-500 mt-5 cursor-pointer`}>
                     View Demo
                     <BsArrowRight
                         className={`group-hover:btn-animation text-black h-full animation-500 lg:absolute -right-0 group-hover:right-3 top-0 lg:opacity-0`}/>
-                </a>
+                </Link>
             </div>
         </div>
     );

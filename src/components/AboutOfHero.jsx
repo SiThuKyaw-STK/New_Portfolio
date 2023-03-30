@@ -32,12 +32,12 @@ const AboutOfHero = () => {
                         sed? Earum est incidunt optio repellat totam vero.
                     </p>
                     <div className={`mt-5 flex items-center justify-start`}>
-                        <a href="/"
+                        <Link href="/"
                            className={`group mr-2 lg:hover:indent-8 indent-2 btn-black text-white inline-flex items-center justify-center relative animation-500`}>
                             <BsFiletypePdf
                                 className={`group-hover:btn-animation text-2xl h-full animation-500 lg:absolute left-3 top-0 lg:opacity-0`}/>
                             Download CV
-                        </a>
+                        </Link>
                         <Link href="/about/#services"
                            className={`group lg:hover:indent-8 indent-2 btn-primary text-black inline-flex items-center justify-center relative animation-500`}>
                             <MdOutlineKeyboardDoubleArrowDown
