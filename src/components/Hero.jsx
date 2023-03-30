@@ -1,5 +1,5 @@
 import React from 'react';
-import homeImg from '/public/assets/hero.png';
+import homeImg from '/public/assets/hero.svg';
 import testUser from '/public/assets/user.jpg';
 import Image from "next/image";
 import {BsFiletypePdf} from "react-icons/bs";
@@ -8,7 +8,7 @@ import {GiRotaryPhone} from "react-icons/gi";
 const Hero = () => {
     return (
         <section className={`h-screen flex justify-center items-center`}>
-            <div className="absolute -z-10 w-full h-full">
+            <div className="fixed -z-10 w-full h-full">
                 <Image className={`w-full h-full`} src={homeImg} alt={`/`}/>
             </div>
             <div className={`flex flex-col justify-center items-center p-[1rem]`}>

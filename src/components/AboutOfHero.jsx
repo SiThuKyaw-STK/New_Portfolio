@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import aboutImg from "/public/assets/aboutofhero.png"
+import aboutImg from "/public/assets/hero.svg"
 import {BsFiletypePdf} from "react-icons/bs";
 import {MdOutlineKeyboardDoubleArrowDown} from "react-icons/md";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Link from "next/link";
 const AboutOfHero = () => {
     return (
         <section className={`h-screen flex justify-center items-center md:py-[1rem] md:px-[5rem] p-[1rem]`}>
-            <div className="absolute -z-10 w-full h-full">
+            <div className="fixed -z-10 w-full h-full">
                 <Image className={`w-full h-full`} src={aboutImg} alt={`/`}/>
             </div>
             <div className={`grid lg:grid-cols-2 gap-10 border-dotted md:border-2 border-primary md:py-20 md:px-10`}>

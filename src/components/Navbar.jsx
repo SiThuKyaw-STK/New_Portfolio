@@ -24,9 +24,9 @@ const Navbar = () => {
                     <FaFolderOpen className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
                     <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Projects</span>
                 </Link>
-                <Link href={`/`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
+                <Link href={`/cv`} className={`group flex items-center justify-start text-primary p-3 cursor-pointer hover:bg-primary duration-500 ease-in-out`}>
                     <BsFillPersonVcardFill className={`text-2xl group-hover:text-secondary duration-500 ease-in-out`}/>
-                    <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>Contact</span>
+                    <span className={`font-medium uppercase ml-4 group-hover:text-secondary duration-500 ease-in-out`}>CV Form</span>
                 </Link>
             </nav>
         </>
