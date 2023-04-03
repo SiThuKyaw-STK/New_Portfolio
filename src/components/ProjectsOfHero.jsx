@@ -9,7 +9,7 @@ import eduBg from "../../public/assets/hero.svg";
 
 const ProjectsOfHero = () => {
     return (
-        <section id={``} className={`h-screen`}>
+        <section id={``} className={``}>
             <div className="fixed -z-10 w-full h-full">
                 <Image className={`w-full h-full`} src={eduBg} alt={`/`}/>
             </div>
@@ -26,7 +26,8 @@ const ProjectsOfHero = () => {
                         img={projectImg1}
                         bgColor={`bg-[#ACA7CB]`}
                         textColor={`text-[#ACA7CB]`}
-                        hoverColor={`hover:bg-[#ACA7CB]`}/>
+                        hoverColor={`hover:bg-[#ACA7CB]`}
+                        url={`https://micky-veterinary-clinic.netlify.app/`}/>
                     <ProjectItem
                         sOrD={`Static`}
                         title={`Zero One Mobile Shop`}
@@ -34,16 +35,18 @@ const ProjectsOfHero = () => {
                         bgColor={`bg-[#C8FCEA]`}
                         textColor={`text-[#C8FCEA]`}
                         hoverColor={`hover:bg-[#C8FCEA]`}
-                        order={`lg:order-1`}/>
+                        order={`lg:order-1`}
+                        url={`https://zero-one-mobileshop.netlify.app/`}/>
                     <ProjectItem
                         sOrD={`Static`}
                         title={`Hotel Smile`}
                         img={projectImg3}
                         bgColor={`bg-[#C0C0C0]`}
                         textColor={`text-[#C0C0C0]`}
-                        hoverColor={`hover:bg-[#C0C0C0]`}/>
+                        hoverColor={`hover:bg-[#C0C0C0]`}
+                        url={`https://hotel-smile.netlify.app/`}/>
                     <ProjectItem
-                        sOrD={`Dynamic`}
+                        sOrD={`Dynamic (under maintenance)`}
                         title={`Education Media`}
                         img={projectImg4}
                         bgColor={`bg-[#00E5B0]`}

@@ -5,6 +5,7 @@ import myCv from "/public/assets/Si_Thu_Kyaw_CV.jpg";
 import Image from "next/image";
 import {BsFiletypePdf} from "react-icons/bs";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 const Cv = () => {
     return (
@@ -29,7 +30,8 @@ const Cv = () => {
                     <rect width='800%' height='800%' transform='translate(-60,-60)' fill='url(#a)'/>
                 </svg>
             </div>
-            <div className={`xl:w-[50%] m-auto p-10 relative xl:block flex justify-center items-center`}>
+            <div className={`xl:w-[50%] m-auto p-10 relative xl:block flex justify-center items-center mb-10`}>
+
                 <Image src={myCv} alt={`/`}/>
                 <div className={`absolute md:bottom-[10%] md:left-[10%] bottom-0`}>
                     <Link href="/"
@@ -40,6 +42,7 @@ const Cv = () => {
                     </Link>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };

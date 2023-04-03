@@ -121,13 +121,13 @@
 }
 @layer components {
     .btn-black {
-        @apply text-[17px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-secondary
+        @apply text-[15px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-secondary
     }
     .btn-black:hover{
         background-color: #323232;
     }
     .btn-primary{
-        @apply text-[17px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-primary
+        @apply text-[15px] md:text-[20px] font-[500] px-[15px] py-[10px] rounded-[5px] bg-primary
     }
     .btn-primary:hover{
         background-color: #00dce4;

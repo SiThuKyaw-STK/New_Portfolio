@@ -2,6 +2,7 @@ import React from 'react';
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import EducationOfHero from "../components/EducationOfHero";
+import Footer from "../components/Footer";
 
 const Education = () => {
     return (
@@ -14,6 +15,7 @@ const Education = () => {
             </Head>
             <Navbar/>
             <EducationOfHero/>
+            <Footer/>
         </>
 
     );

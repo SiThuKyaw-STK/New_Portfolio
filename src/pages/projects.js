@@ -2,6 +2,7 @@ import React from 'react';
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ProjectsOfHero from "../components/ProjectsOfHero";
+import Footer from "../components/Footer";
 
 const Projects = () => {
     return (
@@ -14,6 +15,7 @@ const Projects = () => {
             </Head>
             <Navbar/>
             <ProjectsOfHero/>
+            <Footer/>
         </>
     );
 };

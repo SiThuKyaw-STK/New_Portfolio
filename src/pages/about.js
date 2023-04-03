@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import AboutOfHero from "../components/AboutOfHero";
 import Services from "../components/Services";
+import Footer from "../components/Footer";
 
 function About(props) {
     return (
@@ -16,6 +17,7 @@ function About(props) {
             <Navbar/>
             <AboutOfHero/>
             <Services/>
+            <Footer/>
         </>
     );
 }
