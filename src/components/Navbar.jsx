@@ -19,7 +19,7 @@ const Navbar = () => {
                     }
                 </div>
                 <nav className={`z-[1000] flex flex-col items-start bg-secondary rounded-xl fixed top-[10%] ${nav?'right-[1%]':'right-[-50%]'} animation-500`}>
-                    <Link href={`/`} className={`w-full group flex items-center justify-start text-primary p-1 cursor-pointer hover:bg-primary animation-500 p-3`}>
+                    <Link href={`/`} className={`w-full group flex items-center justify-start text-primary p-1 cursor-pointer rounded-t-xl hover:bg-primary animation-500 p-3`}>
                         <IoHome className={`text-2xl group-hover:text-secondary animation-500`}/>
                         <span className={`font-medium ml-2 text-base uppercase group-hover:text-secondary`}>Home</span>
                     </Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <FaFolderOpen className={`text-2xl group-hover:text-secondary animation-500`}/>
                         <span className={`font-medium ml-2 text-base uppercase group-hover:text-secondary animation-500`}>Projects</span>
                     </Link>
-                    <Link href={`/cv`} className={`w-full group flex items-center justify-start text-primary p-1 cursor-pointer hover:bg-primary animation-500 p-3`}>
+                    <Link href={`/cv`} className={`w-full group flex items-center justify-start text-primary rounded-b-xl p-1 cursor-pointer hover:bg-primary animation-500 p-3`}>
                         <BsFillPersonVcardFill className={`text-2xl group-hover:text-secondary animation-500`}/>
                         <span className={`font-medium ml-2 text-base uppercase group-hover:text-secondary animation-500`}>CV Form</span>
                     </Link>

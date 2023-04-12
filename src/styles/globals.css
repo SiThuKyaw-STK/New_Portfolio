@@ -11,6 +11,7 @@
     }
     body {
         background-color: #1E1E1E;
+        overflow-x: hidden;
     }
     h1,h2,h3,h4,h5,h6{
         @apply font-bold
@@ -68,6 +69,10 @@
             opacity: 0  ;
             transform: rotate(45deg) translate(10px,10px);
         }
+    }
+    .service-item:hover.service-item h4{
+        text-shadow: 0 0 20px rgba(57,62,70,1);
+        transition: 0.2s;
     }
     /*mobile hamburger*/
     #hamburger{

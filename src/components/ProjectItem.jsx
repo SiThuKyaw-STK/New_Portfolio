@@ -1,12 +1,28 @@
 import React from 'react';
 import Image from "next/image";
+import {motion} from "framer-motion";
 import projectImg1 from "../../public/assets/projects/img.png";
 import {BsArrowRight} from "react-icons/bs";
 import Link from "next/link";
 
 const ProjectItem = ({sOrD,title,img,bgColor,textColor,hoverColor,order,url}) => {
+    const parentVariants={
+        hidden:{
+            opacity:0,
+            x:-300
+        },
+        visible:{
+            opacity: 1,
+            x:0,
+            transition:{
+                type:'spring',
+                damping:15,
+                mass:0.5
+            }
+        }
+    };
     return (
-        <div className={`lg:grid lg:grid-cols-3 gap-5 items-end flex flex-col`}>
+        <motion.div variants={parentVariants} initial={`hidden`} whileInView={`visible`} viewport={{once:true}} className={`lg:grid lg:grid-cols-3 gap-5 items-end flex flex-col`}>
             <div className={`${bgColor} rounded m-auto ${order}`}>
                 <Image src={img} alt={``}/>
             </div>
@@ -24,7 +40,7 @@ const ProjectItem = ({sOrD,title,img,bgColor,textColor,hoverColor,order,url}) =>
                         className={`group-hover:btn-animation text-black h-full animation-500 absolute -right-0 group-hover:right-3 top-0 lg:opacity-0`}/>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
