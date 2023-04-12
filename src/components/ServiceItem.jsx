@@ -6,27 +6,19 @@ const ServiceItem = ({title, img}) => {
     const parentVariants={
         hidden:{
             opacity:0,
-            y:100
+            x:'-200px'
         },
         visible:{
             opacity: 1,
-            y:0,
+            x:0,
             transition:{
                 type:'spring',
-                damping:15,
-                when:'beforeChildren',
-                staggerChildren:0.5,
+                damping:10,
+                stiffness:120,
+                mass:0.5
             }
         }
     };
-    const childFadeIn={
-        hidden: {
-            opacity:0.1
-        },
-        visible: {
-            opacity:1
-        }
-    }
     return (
         <motion.div
             variants={parentVariants}
@@ -34,14 +26,14 @@ const ServiceItem = ({title, img}) => {
             whileInView={`visible`}
             viewport={{once:true}}
             className={`service-item grid gap-10 justify-items-center hover:border-primary border-4 border-secondary rounded p-8 cursor-pointer relative animation-200`}>
-            <motion.div variants={childFadeIn}>
+            <div>
                 <Image src={img} alt={`/`}/>
-            </motion.div>
-            <motion.h4 variants={childFadeIn} className={`text-primary`}>{title}</motion.h4>
-            <motion.p variants={childFadeIn} className={`text-white text-[20px] text-center`}>
+            </div>
+            <h4 className={`text-primary text-center`}>{title}</h4>
+            <p className={`text-white text-[20px] text-center`}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Deleniti est itaque provident quidem quos soluta?
-            </motion.p>
+            </p>
         </motion.div>
     );
 };
