@@ -3,6 +3,8 @@ import {FaFacebookSquare, FaGithubSquare, FaRegCopyright, FaTwitterSquare} from 
 import Link from "next/link";
 
 const Footer = () => {
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
     return (
         <section className={`bg-info flex justify-center items-center p-10`}>
             <div className={`grid gap-10`}>
@@ -22,7 +24,7 @@ const Footer = () => {
                 <div className={`flex items-center justify-center gap-1`}>
                     <FaRegCopyright/>
                     <h5 className={`font-medium tracking-wide`}>
-                        2023 <Link href={``} className={`text-[#00176C] underline font-bold`}>Si Thu Kyaw</Link>. All Rights Reserved</h5>
+                        {currentYear} <Link href={``} className={`text-[#00176C] underline font-bold`}>Si Thu Kyaw</Link>. All Rights Reserved</h5>
                 </div>
             </div>
         </section>
