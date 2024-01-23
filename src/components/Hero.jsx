@@ -1,6 +1,6 @@
 import React from 'react';
 import homeImg from '/public/assets/hero.svg';
-import testUser from '/public/assets/user.jpg';
+import me from '/public/assets/me.jpg';
 import Image from "next/image";
 import {BsFiletypePdf} from "react-icons/bs";
 import {GiRotaryPhone} from "react-icons/gi";
@@ -56,7 +56,7 @@ const Hero = () => {
                 <Image className={`w-full h-full`} src={homeImg} alt={`/`}/>
             </div>
             <div className={`flex flex-col justify-center items-center p-[1rem]`}>
-                <Image className={`w-[178px] h-[178px] rounded-full`} src={testUser} alt={`/`}/>
+                <Image className={`w-[178px] h-[178px] rounded-full object-cover`} src={me} alt={`/`}/>
                 <motion.h1 variants={childFadeInDown} className={`text-white mt-10`}>{"Hi I'm"}<span
                     className={`text-primary`}> Si Thu Kyaw</span></motion.h1>
                 <motion.h2 variants={childFadeInDown} className={`text-primary font-extralight`}>Web Developer</motion.h2>
